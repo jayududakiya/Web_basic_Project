@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size:62.5%;
+}
+
+/* ---------------------------------------------------utilitiy calss section -------------------------------- */
+.main-continer{
+    max-width:1200%;
+    width: 90%;
+    margin: 0 auto;   
+}
+
+.content::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+
+.btn{
+    text-decoration:none;
+    display:inline-block;
+}
+
+
+
+
+/* ---------------------------------------------------heading section -------------------------------- */
+.main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.288)), url(../images/map-of-the-world-g6ae709856_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+   background-color:rgba(51, 51, 51, 0.658);
+}
+
+ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.logo{
+    color: #fff;
+    font-size:1.8rem;
+    float:left;
+    padding:0.5% 1%;
+    font-weight:900;
+}
+
+.logo-heading:hover{
+    color:tomato;
+}
+
+/* --------------------------------------------search box-------------------------------- */
+
+#search{
+    color:#333;
+    margin-left: 5%;
+    /* display: inline-block; */
+    padding: 0.5% 0.4%;
+    border: none;
+    outline: none;
+    background:rgba(255, 255, 255, 0.753);
+    border-bottom:1px solid black;
+}
+
+#search:hover{
+    background-color: #fff;
+}
+
+/* ============================================================================================= */
+.navbar ul li {
+    display: inline-block;
+    font-size:1.7rem;
+    list-style: none;
+    padding: 1.2%;
+}
+ 
+ul li a{
+    font-weight:500;
+    text-transform:capitalize;
+    padding-bottom: 2px;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.head-Content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    padding:1.5%;
+}
+
+.head-Content h1 {
+    font-size:4rem;
+    padding:3% 0%;
+    color: #fff;
+}
+
+.head-Content p{
+    font-size :2rem;
+    color: #fff;
+    font-weight:300;
+    margin:0.5% auto;
+}
+.primorey-button{
+    border: none;
+    outline: none;
+    color:#fff;
+    margin:5% auto;
+    border: 3px solid snow;
+    font-size:2rem;
+    padding:1.2%;
+    font-weight:400;
+    width:50%;
+}
+
+.primorey-button:hover{
+    border:none;
+    color: #111;
+    background:none;
+    border: 3px solid #111;
+    
+}
+
+/* ---------------------------------------------------new section -------------------------------- */
+.Salide-section{
+    padding:8% 0% 2% 0%;
+    margin: 0% auto;
+
+}
+
+.Salide{
+    box-shadow: 0px 0px 10px 5px #11111141;
+    background-image: linear-gradient(to top, #cdd0d0, #cdd3d3, #cdd5d6, #ccd8d9, #ccdadc);
+    height:300px;
+    margin-bottom: 5em;
+}
+
+.Salide .img-box{
+    height: 100%;
+    width: 50%;
+}
+.Salide .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Salide .text-box{
+    padding:1%;
+    width: 50%;
+}
+
+.Salide .text-box h3{
+    color: #222;
+    font-size:2.8rem;
+    padding-bottom:0.5%;
+    text-transform:capitalize;
+    font-weight:500;
+}
+
+.Salide .text-box h3::after{
+    content: '';
+    display: block;
+    border: 1px solid #f04d4d;
+    margin: 1% 0%;
+
+}
+.Salide .text-box p{
+    padding-left:2%;
+    color:#111;
+    font-size:1.8rem;
+    font-weight:400;
+    text-transform: lowercase;
+    
+}
+
+
+
+.card1 .img-box ,.card2 .text-box,.card3 .img-box, .card4 .text-box {
+    float: left;
+}
+
+.card2 .img-box ,.card1 .text-box ,.card3 .text-box , .card4 .img-box{
+    float: right;
+}
+
+.secondriy-btn{
+    padding: 1% 2%;
+    color:#111;
+    border: 2px solid #111;
+    font-size:1.7rem;
+}
+.secondriy-btn:hover{
+    border: none;
+    color: #333;
+    border-bottom: 2px solid #111;
+}
+.card3 .text-box .secondriy-btn,.card1 .text-box .secondriy-btn{
+    margin:10% 0% 0% 2%;
+}
+
+.card2 .text-box .secondriy-btn,.card4 .text-box .secondriy-btn{
+    margin:4% 0% 0% 2%;
+
+}
+
+
+/* ----------------------------------------------about-box--------------------------------------- */
+
+.cards-box{
+    padding-bottom:3%;
+}
+
+.details-box{
+    box-shadow: 0px 0px 7px 5px #36363677;
+}
+
+.details-box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box{
+    text-align: center;
+    width:33.33%;
+    float: left;
+    padding:2.5%;
+}
+
+.box h2{
+    font-size:3rem;
+    color: #fff;
+    padding: 1%;
+}
+.box p{
+    font-size:2rem;
+    color: #fff;
+     padding: 1.5%;
+}
+
+
+.details-box .box-1,.box-3 {
+    background: linear-gradient(to right top, #2e0540, #2a0445, #24034a, #1b034f, #0a0455);
+}
+
+.details-box .box-2{
+    background: linear-gradient(to right top, #f04d4d, #f34f4f, #f65151, #fa5353, #fd5555);
+}
+
+
+.fa-compass{
+    color: #fff;
+    font-size:4.5rem;
+    padding-bottom: 3%;
+}
+.fa-user-tie, .fa-group-arrows-rotate{
+    color:#f86363;
+    font-size:4.5rem;
+    padding-bottom:3%;
+
+}
+
+
+
+/* ------------------------------------------footr section------------------------------------------- */
+.media-links{
+    background-color: #333;
+}
+
+.media::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+
+.media{
+    margin: 0% auto;
+    width:400px;
+}
+
+.fa-brands{
+    padding: 2.5% 10%;
+    float:left;
+    width: 25%;
+    font-size:3.2rem;
+    color: #fff;
+}
+
+
+.fa-brands:hover{
+    color: #999;
+}
+
+
+.media-links p{
+    font-size:2.5rem;
+    color:#fff ;
+    text-align: center;
+    padding-top: 2% 0%;
+}
+
+.media-links p::after{
+    content: 'Made By : Jack Gajjar';
+    display: block;
+    color: #fff;
+    padding:1%;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* -----------------------------------about us page --------------------------------------- */
+
+.about-nav{
+    background-color: rgba(17, 17, 17, 0.795);
+}
+
+
+
+.about-section{
+    background-image: linear-gradient(to top, #a6a9ac6b, #9b9c9f65, #8f90936b, #8484865b, #78787a65), url(../images/tour01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-section::after{
+    content: '';
+    border: 1px solid black;
+    display: block;
+    opacity: 0;
+    clear: both;
+    margin-top:18%; 
+}
+
+.big-heading{
+    padding: 2% 1.5% ;
+    text-align:center;
+    margin: 0% 2.5% 2% 2.5%;
+    font-size:6rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight:400;
+}
+
+
+.about-heading{
+    padding:1%;
+    text-align: center;
+    width: 70%;
+    color: #fff;
+    margin: 0% 15% 1% 15%;
+    font-size:4rem;
+    text-transform: capitalize;
+}
+
+
+
+.main-about-box{
+    margin-top: 8%;
+    height: 24em;
+    color: #fff;
+}
+.main-about-box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.about-box{
+    background: rgba(34, 34, 34, 0.658);
+    width: 20%;
+    padding: 1%;
+    border-radius: 1em;
+    text-align: center;
+    float: left;
+    margin: 1%  2.5%;
+}
+
+.about-box h3{
+    font-size:3.2rem;
+    font-weight:500;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    padding: 2% 0%;
+    margin:1.5% 0%;
+}
+
+.about-box p{
+    font-size:2rem;
+    font-weight: 300;
+    padding:2% 0.5%;
+}
+
+.t1,.b1,.a1,.a2{
+    font-size:4.2rem;
+    margin: 2%;
+    padding: 0.5%;
+}
+
+.about-links{
+    font-size:1.9rem;
+    margin: 2.5%;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 1.5% 3%;
+    border: 2px solid white;
+}
+.about-links:hover{
+    color: #fff;
+    border: none;
+    padding: 1%;
+    border-radius: 0%;
+    border-bottom:2px solid white;
+}
+
+
+/* ----------------------------------------------contact page------------------------------------ */
+
+
+.main-contact-nav{
+    background: rgba(0, 0, 0, 0.685);
+}
+
+.C-box{
+    margin: 2% auto;
+    height:55em;
+}
+
+.C-box::after{
+    display: block;
+    clear: both;
+}
+
+
+/* ################################# address box ############################# */
+
+.address-box{
+    width: 48%;
+    height:95%;
+    float: left;
+    margin: 1.5% 1%;
+}
+
+.address-group{
+    padding: 1%;
+    height: 48%;
+    margin-bottom: 1%;
+}
+
+.contact-heading{
+    text-align: center;
+    font-size:5rem;
+    color: #f65151;
+
+}
+
+.contact-heading::after{
+    content: '';
+    display: block;
+    border: 2px solid #f65151;
+    width: 90%;
+    margin: 1% auto;
+}
+.address-group{
+    text-align: center;
+}
+
+.I1,.I2,.I3{
+    font-size:3rem;
+    padding:1% 5%;
+}    
+
+.contact-card{
+    margin: 1% 0%;
+}
+
+.contact-card p{
+    display: inline-block;
+    padding: 1% 0%;
+    font-size:2rem;
+}
+
+.address-group .C-email, .C-location,.C-contect {
+    padding: 1%;  
+}
+
+.Company-img{
+    height:51%;
+    margin:0%;
+}
+
+.Company-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+
+}
+
+
+/* ################################# from box ############################# */
+
+.form-box{
+    width: 48%;
+    float: right;
+    height: 95%;
+    margin: 1.5% 1%;
+}
+
+.form-heading{
+    text-align: center;
+    font-size:2.5rem;
+    color: #f65151;
+
+}
+
+.contact-form{
+    padding: 1%;
+    margin-top:5% ;
+}
+
+.form-heading::after{
+    content: '';
+    display: block;
+    border: 2px solid #f65151;
+    width: 90%;
+    margin: 1% auto;
+}
+
+.form-group{
+    border: 3px silid red;
+}
+
+.form-box label{
+    display: block;
+    font-size:2rem;
+    padding: 0% 0% 1% 1%; 
+}
+
+input[type="text"],input[type="email"]{
+    width:95%;
+    margin:1.5% 2.5%;
+    padding:1% 1%;
+    outline: none;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.text-area{
+    outline: none;
+    width: 95%;
+    margin: 1.5% 2.5%;
+    padding: 1% 1%;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+.form-btn{
+    text-align: center;
+    width: 90%;
+    margin: 2% 5%;
+    padding:1%;
+    font-size:2rem;
+    background-color: #f04d4d;
+    color: #fff;
+    border: none;
+    border-radius: 1em;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.form-btn:hover{
+    background-color: #f04d4dd2;
+    color: #222;
+}
+
+
+/* ====================================== media quares  ! ========================================= */
+@media  (max-width:500px) {
+    html{
+         
+        font-size:50%;
+
+}
+
+.navbar .logo ,ul{
+    float: none;
+    width: 100%;
+    display: block;
+    padding: 2%;
+    text-align: center;
+}
+
+
+.navbar ul input{
+    display: none;
+}
+
+.Salide{
+    height: auto;
+    width: 100%;
+
+}
+
+.Salide .img-box{
+    float: none;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.Salide .text-box{
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.cards-box{
+    padding:15%;
+}
+
+
+.box{
+    width: 100%;
+    display: block;
+    height: auto;
+    text-align: center;
+}
+
+.main-about-box{
+    height: auto;
+}
+
+.main-about-box .about-box{
+    width: 90%;
+    float: none;
+    padding: 0%;
+    margin: 3% 5%; 
+    height: auto;
+    display: block;
+}
+
+.t1,.b1,.a1,.a2{
+    padding:2% 0% 1% 0% ;
+}
+
+.C-box{
+    height: auto;
+}
+
+.address-box{
+    margin-bottom: 5%;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.form-box{
+    margin-bottom: 10%;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.media{
+    width:200px;
+}
+
+
+
+}
+
+@media (min-width:501px ) and (max-width:680px){
+
+html{
+    font-size:53%;
+}
+
+
+
+.navbar .logo ,ul{
+    float: none;
+    width: 100%;
+    display: block;
+    padding: 2%;
+    text-align: center;
+}
+
+
+.navbar ul input{
+    display: none;
+}
+
+.Salide{
+    height: auto;
+    width: 100%;
+
+}
+
+.Salide .img-box{
+    float: none;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.Salide .text-box{
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.cards-box{
+    padding:15%;
+}
+
+
+.box{
+    width: 100%;
+    display: block;
+    height: auto;
+    text-align: center;
+}
+
+.main-about-box{
+    height: auto;
+}
+
+.main-about-box .about-box{
+    width: 90%;
+    float: none;
+    padding: 0%;
+    margin: 3% 5%; 
+    height: auto;
+    display: block;
+}
+
+.t1,.b1,.a1,.a2{
+    padding:2% 0% 1% 0% ;
+}
+
+.C-box{
+    height: auto;
+}
+
+.address-box{
+    margin-bottom: 5%;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.form-box{
+    margin-bottom: 10%;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+
+.media{
+    width:300px;
+}
+
+
+}
+
+
+@media (min-width:681px ) and (max-width:800px){
+
+    html{
+        font-size:53%;
+    }
+    .box{
+        height:250px;
+    }
+}    
+
+
+@media (min-width:801px ) and (max-width:1024px){
+
+
+.Salide{
+   height:45vmax;
+}
+
+
+}    
+
+
+
+
+
+
