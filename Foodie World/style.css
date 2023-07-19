@@ -1,0 +1,1203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fixed-ctn{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+}
+
+.btn-only{
+    text-decoration: none;
+    font-size:2rem;
+    text-transform: capitalize;
+}
+
+.H-heading{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #3a4660;
+    text-transform: capitalize;
+}
+
+.center-box{
+    width: 90%;
+    display:block;
+    margin: 0px auto ;
+}
+
+
+/* ############################################################################################################################# */
+
+#navbar {
+    background-color:#f9f8fd;
+    display: flex;
+    opacity: 0.80;
+    width:auto;
+    z-index: 2;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.46) ;
+    flex-flow: row  wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.logo {
+    margin: 5px 0px 5px 70px;
+    padding: 4px 8px;
+}
+
+.logo::after{
+    margin-top: 2px;
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0%;
+    opacity: 0;
+    border: 1px solid #3a4660;
+    animation-name: width-change;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+
+@keyframes width-change  {
+     from{
+        margin-top: 2px;
+        width: 0%;
+        opacity: 0;
+        border: 1px solid #3a4660;
+     }
+
+     to{
+        margin-top: 2px;
+        width: 100%;
+        opacity:1;
+        border: 1px solid #845007;
+     }
+
+}
+
+.logo h2{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: #3a4660;
+    letter-spacing: none;
+    animation-name: lettar-spacing;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes lettar-spacing {
+    from{
+        color: #3a4660;
+        letter-spacing: none;
+    }
+
+    to{
+        color: #845007;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+
+
+.manu input[type="checkbox"] , .manu .manu-logo{
+    display: none;
+}
+
+.manu .manu-links{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px 70px 5px 0px;
+}
+
+.manu .manu-links li{
+    list-style: none;
+    margin: 2px 15px;
+}
+
+
+.manu .manu-links li a{
+    text-transform: uppercase;
+    font-size: 1.9rem ;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3a4660;
+    display: block;
+}
+
+
+.manu .manu-links li a::after{
+    content: "";
+    display: block;
+    margin: 2px 0px 0px 0px;
+    width:0%;
+    opacity: 0;
+    border: 1px solid #845007;
+    transition: 0.3s all ease-in;
+}
+
+
+
+.manu .manu-links li a:hover::after{
+    opacity: 1;
+    width: 100%;
+    border: 1px solid #3a4660;
+}
+
+
+
+
+/* ##################################headder-section########################################### */
+
+.head-set{
+    background: linear-gradient( rgba(184, 178, 178, 0.6) , rgba(57, 53, 53, 0.4) ) ,  url(./images/header-img02.jpg) ;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:70vh;
+}
+
+.head-set .header-heading{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   height: 100%;
+   font-size: 2rem;
+}
+
+.head-set .header-heading h1{
+    font-size:2.6rem;
+    color: #3a4660;
+    font-weight: 700;
+    text-transform:uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.head-set .header-heading p{
+    font-size: 2.2rem;
+    color: lightcyan;
+    font-weight:400;
+    font-style:italic;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+
+.head-set .header-heading .head-btn {
+    border-radius: 20px;
+    padding: 5px  18px;
+    animation-name: btn-blink  ;
+    animation-timing-function: ease-in-out;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-play-state:running;
+}
+
+.head-set .header-heading .head-btn:hover{
+    animation-play-state: paused;
+}
+
+
+.head-set .header-heading .head-btn a{
+    color: #f9f8fd;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+@keyframes btn-blink {
+
+    0%{
+        outline:2px solid #ffffff6b;
+        background:linear-gradient( rgba(137, 133, 133, 0.3), rgba(184, 178, 178, 0.3) );
+    }
+    100%{
+        outline: 2px solid #3a4660;
+        background: linear-gradient( rgba(184, 178, 178, 0.444) , rgba(115, 110, 110, 0.657) );
+    }
+
+
+}
+
+/* ##################################About-section########################################### */
+
+
+
+#about {
+    margin:auto;
+    display: block;
+}
+
+#about .about-set{
+    display: flex;
+    padding: 1px 10px;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#about .about-set .about-img{
+    flex: 1 1 48%;
+    padding: 4px 10px;
+    transform: translateX(180px);
+    animation-name: AB-img-transfrom;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s ;
+}
+
+@keyframes  AB-img-transfrom {
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#about .about-set .about-img img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    object-position:right;
+    height: 500px;
+    width: 100%;
+}
+
+#about .about-set .about-text{
+    flex: 1 1 48%;
+    margin-left: 10px;
+    padding: 20px;
+    transform: translateX(-180px);
+    animation-name: AB-text-transfrom;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s ;
+}
+
+@keyframes  AB-text-transfrom {
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+#about .about-set .about-text h1{
+    font-size: 2.5rem;
+    opacity: 75%;
+    font-weight: 700;
+    color: #3a4660;
+    padding-top: 50px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+#about .about-set .about-text h2{
+    color: #000;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    padding: 5px 5px 5px 10px;
+}
+
+#about .about-set .about-text p{
+    color: #000;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    line-break: anywhere;
+    line-height: 30px;
+    padding: 5px 5px 5px 10px;
+}
+
+
+/* ##################################   food-category-list   ########################################### */
+
+
+
+#food-category-list{
+   padding: 5px;
+}
+
+#food-category-list h1{
+    font-size: 3rem;
+    margin: 10px auto;
+    color: #3a4660;
+    text-align: center;
+}
+
+#food-category-list .food-category{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#food-category-list .food-category .categorys{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px auto;
+    height: 250px;
+    max-width: 250px;
+}
+
+
+.food-category .categorys .category-images{
+    width: 100%;
+    height: 100%;
+}
+
+.food-category .categorys .category-images img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.food-category .categorys .category-details{
+    width: 80%;
+    z-index: 4;
+    position: absolute;
+    padding: 10px;
+    top: 100%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    transition: 0.5s all;
+}
+
+.food-category .categorys:hover .category-details{
+    top: 50%;
+    opacity: 1;
+}
+
+.food-category .categorys::after{
+    display: block;
+    z-index: 0;
+    opacity: 0.1;
+    position: absolute;
+    content: "";
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top:100%;
+    left: 0%;
+    transition: 0.4s all;
+}
+
+.food-category .categorys:hover::after{
+    top: 0;
+    opacity:0.4;
+}
+
+.food-category .categorys .category-details h2{
+    color: #f9f8fd;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.food-category .categorys .category-details a{
+    font-size: 1.5rem;
+    color: #f9f8fd;
+    display: block;
+    text-align: center;
+    margin:15px 40px 0px 40px;
+    padding: 5px 10px;
+    outline: 1px solid #845007;
+    border-radius: 50px;
+    background-color: #3a4660b2;
+}
+
+
+/* ##################################   food-manu-list   ########################################### */
+
+
+
+#food-manu h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 10px auto;
+    color: #3a4660;
+    text-align: center;
+}
+
+#food-manu .food-manu-list{
+    display: flex;
+    padding: 10px 5px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#food-manu .food-manu-list .manu-list{
+    padding: 5px 10px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#food-manu .food-manu-list .manu-list .manu-image{
+    height: 180px;
+    width: 180px;
+    position: relative; 
+}
+
+#food-manu .food-manu-list .manu-list .manu-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   
+    border-radius: 50%;
+}
+
+#food-manu .food-manu-list .manu-list .manu-image  .other-img{
+    position: absolute;
+    display:block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    top: 0;
+    opacity: 0;
+    animation: image-blink 4s  ease-in-out  2s infinite alternate-reverse  ;
+}
+
+@keyframes image-blink {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+#food-manu .food-manu-list .manu-list .manu-detalis {
+    margin: auto;
+    padding: 5px;
+}
+
+
+
+#food-manu .food-manu-list .manu-list .manu-detalis h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #3a4660;
+    padding-left: 5px;
+    margin: auto;
+}
+
+#food-manu .food-manu-list .manu-list .manu-detalis p{
+    font-size: 1.5rem;
+    padding-left:5px ;
+    margin: 5px auto;
+    text-transform: capitalize;
+}
+
+
+#food-manu .food-manu-list .manu-list .manu-detalis span{
+    display: block;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: #845007;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 10px 5px;
+}
+
+
+
+#food-manu .food-manu-list .manu-list .manu-detalis span:hover{
+    text-decoration: underline;
+    color: #3a4660;
+}
+
+/* ##################################   reviews-box   ########################################### */
+
+
+
+#reviews{
+    margin: 10px auto;
+}
+
+#reviews h1{
+    font-size: 3.1rem;
+    margin: 20px auto;
+    color: #3a4660;
+    text-align: center;
+}
+
+#reviews .review-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#reviews .review-container .rating-box{
+    display: flex;
+    flex-basis:30%;
+    border-radius: 15px;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d9ddc1a7; 
+    transition: 0.5s all;
+}
+
+#reviews .review-container .rating-box:hover{
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.46);
+}
+
+#reviews .review-container .rating-box .star-box{
+    padding: 4px 8px;
+    margin: 10px auto;
+}
+
+#reviews .review-container .rating-box .star-box .fa-star{
+    color: #ffd700;
+    font-size:1.9rem;
+}
+
+
+#reviews .review-container .rating-box .comments p{
+    font-size: 1.4rem;
+    margin: 5px 10px;
+    text-align: center;
+}
+
+
+#reviews .review-container .rating-box .rating-img{
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+}
+
+#reviews .review-container .rating-box .rating-img img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 50%;
+    height: 100%;
+}
+
+
+#reviews .review-container .rating-box .rating-name h4{
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px 10px;
+}
+
+
+/* ##################################   contact-us  ########################################### */
+
+
+#contact-us {
+    margin: 15px auto;
+}
+
+#contact-us .contact-box .contact-detalis h1{
+    font-weight: 700;
+    color: #845007;
+    padding: 5px 10px ;
+    margin: 2px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#contact-us .contact-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+#contact-us .contact-box .contact-img{
+    height: 300px;
+}
+
+
+#contact-us .contact-box .contact-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#contact-us .contact-box .contact-detalis{
+    margin: auto 10px;
+    padding: 10px;
+}
+
+#contact-us .contact-box .contact-detalis form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ 
+#contact-us .contact-box .contact-detalis form input ,
+#contact-us .contact-box .contact-detalis form textarea{
+    font-size: 1.8rem;
+    display: block;
+    color: #3a4660;
+    font-weight: 400;
+    padding: 4px 8px;
+    width: 100%;
+    margin: 5px auto;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #555;
+    transition: 0.5s all;
+}
+
+#contact-us .contact-box .contact-detalis form input:focus, 
+#contact-us .contact-box .contact-detalis form textarea:focus
+{
+    background-color:#f0e6ce;
+}
+
+
+#contact-us .contact-box .contact-detalis form button{
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background-color:#f79898;
+    opacity: 95%;
+    padding: 4px 10px;
+    border-radius: 15px;
+    pointer-events:none ;
+    margin: 10px auto;
+    transition: 0.4s background-color;
+}
+
+
+ 
+#contact-us .contact-box .contact-detalis form input[type="email"]:valid ~ button{
+    background-color:#f94a4a;
+    opacity: 1;
+    pointer-events:painted;
+} 
+
+
+
+/* ##################################   footer   ########################################### */
+
+footer{
+    padding: 5px 10px;
+    background-color: #bebebe;
+}
+
+footer .footer-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+
+
+.footer-box .footer-heading h1{
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+}
+
+
+.footer-box .footer-heading p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #555;
+}
+
+.footer-box .footer-heading p span{
+    font-size: 2.2rem;
+    color: #000;
+    padding: 4px;
+}
+
+.footer-box .footer-heading a{
+    text-align: center;
+    color: #ffffffd2;
+    text-decoration: underline;
+    background-color: #bebebe;
+    font-weight: 700;
+    display: block;
+    padding: 6px 8px;
+    border-radius: 50px;
+    outline: 2px dashed #111;
+    margin: 8px 30px;
+    animation: footer-btn-blink 3s ease-in-out 1.5s infinite  alternate-reverse ;
+}
+
+@keyframes  footer-btn-blink{
+    from{
+        color: #ffffffd2;
+        text-decoration: underline;
+        background-color: #bebebe;
+    }
+
+    to{
+        color: #111;
+        text-decoration: none;
+        background-color: #f79898;
+    }
+
+
+}
+
+.footer-box .footer-links h1{
+    text-align: center;
+    font-weight: 700;
+    margin: 10px auto;
+}
+ 
+.footer-box .footer-links .F-link {
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content:space-evenly;
+    padding: 2px 4px;
+} 
+
+.footer-box .footer-links .F-link a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    display: inline-block;
+    color: #777;
+    flex-basis: 16%;
+    padding: 5px 10px;
+    transition: 0.4s all;
+}
+
+.footer-box .footer-links .F-link a i{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.footer-box .footer-links .F-link a:hover i{
+    color: #3a4660b2;
+}
+
+.footer-box .footer-links .F-link a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##################################   @media   ########################################### */
+
+
+
+@media (max-width:550px) {
+
+
+    .logo{
+        margin:6px;
+    }
+
+    .manu{
+        top: 0%;
+        right: 20px;
+        position: relative;
+    }
+
+    .manu input[type="checkbox"]{
+        width: 33px;
+        height: 33px;
+        opacity: 0;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        z-index: 6;
+    }
+
+    .manu .manu-logo{
+        width: 33px;
+        height: 33px;
+        display:flex;
+        flex-flow:column  wrap;
+        justify-content: space-between;
+        position: relative;
+        z-index: 3;
+        transition: 0.6s all ease-out;
+    }
+
+    .manu .manu-logo .line{
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+        background-color: #3a4660;
+        transition: 0.5s all ;
+    }
+
+    .manu .manu-logo .line1{
+        transform-origin: 0% 129%;
+    }
+
+    .manu .manu-logo .line3{
+        transform-origin: 0% -28%;
+    }
+
+    .manu input[type="checkbox"]:checked ~ .manu-logo .line1{
+        transform: rotate(45deg);
+        width: 102%;
+    }
+
+    
+    .manu input[type="checkbox"]:checked ~ .manu-logo .line2{
+        opacity: 0;
+    }
+
+    
+    .manu input[type="checkbox"]:checked ~ .manu-logo .line3{
+        transform: rotate(-45deg);
+        width: 105%;
+    }
+
+    .manu input[type="checkbox"]:checked ~ .manu-logo{
+        transform: rotate(360deg);
+    }
+
+    .manu .manu-links{
+        background-color:#f9f8fde8;
+        top: 37px;
+        right: 0;
+        height: 100vh;
+        transform: translateX(-500px);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-items:stretch;
+        transition:0.6s transform ;
+        transition-timing-function: ease-out;
+    }
+    
+    .manu input[type="checkbox"]:checked ~ .manu-links{
+        top: 37px;
+        transform: translateX(89px);
+    }
+
+    
+    .manu .manu-links li {
+        margin: 25px 20px;
+        position: relative;
+        padding-left: 95px;
+    }
+    
+    .manu .manu-links li a{
+        text-align: right;
+        padding: 5px ;
+        z-index:1;
+        transition: 0.5s all;
+    }
+
+    .manu .manu-links li a::after{
+        display: none;
+    }
+
+    .manu .manu-links li::after{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        display: block;
+        margin: 5px 0px 0px 0px;
+        width:0%;
+        top: -6px;
+        left: 0px;
+        height: 100%;
+        opacity:0;
+        background-color: #3a4660;
+        transition: 0.5s all;
+        transition-timing-function: ease-out;
+    }
+    
+    
+    
+    .manu .manu-links li:hover::after{
+        opacity: 1;
+        width:105%;
+        border-radius: 0px 50px 50px 0px;
+    }
+
+    .manu .manu-links li:hover a{
+        color: #f9f8fd;
+    }
+
+    #about .about-set{
+    display: flex;
+    flex-flow: column wrap;
+    }
+
+    #about .about-set .about-text , 
+    #about .about-set .about-img{
+        flex: 1 1 100%;
+    }
+
+    
+#about .about-set .about-img img{
+    height: auto;
+}    
+    #about .about-set .about-text h1{
+    text-align: center;
+    padding: 5px 10px;
+    }
+
+
+
+
+    #about .about-set .about-text p{
+        font-weight: 400;
+        line-break:anywhere;
+        line-height: 28px;
+    }
+
+    #food-manu .food-manu-list .manu-list{
+        flex-flow: column wrap;
+   }
+
+   
+   #food-manu .food-manu-list .manu-list .manu-image{
+       width: 50%;
+       margin: 0px auto 8px auto;
+   }   
+
+   #food-manu .food-manu-list .manu-list .manu-detalis {
+       text-align: center;
+   }
+    
+
+
+    #reviews .review-container .rating-box{
+        flex-basis:auto;
+        margin: 10px auto;
+    }
+
+    
+    #contact-us .contact-box{
+       display: flex;
+
+    }
+
+
+}
+
+
+@media (min-width:552px) and (max-width:780px){
+    #navbar .logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px auto;
+    }
+    
+@keyframes width-change  {
+    from{
+       margin-top: 2px;
+       width: 0%;
+       opacity: 0;
+       border: 1px solid #3a4660;
+    }
+
+    to{
+       margin-top: 2px;
+       width: 30%;
+       opacity:1;
+       border: 1px solid #845007;
+    }
+
+}
+
+    #navbar .manu{
+        display: block;
+        margin: 10px auto;
+    }
+
+    #navbar .manu .manu-links{
+        margin: 0% auto;
+    }
+    
+
+    
+    #about .about-set{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    #about .about-set .about-img img{
+        height: 500px;
+    }
+
+     
+    #food-manu .food-manu-list .manu-list{
+         flex-flow: column wrap;
+    }
+
+    
+    #food-manu .food-manu-list .manu-list .manu-image{
+        width: 50%;
+        margin: 0px auto 8px auto;
+    }   
+
+    #food-manu .food-manu-list .manu-list .manu-detalis {
+        text-align: center;
+    }
+
+    #reviews .review-container .rating-box{
+        flex-basis:45%;
+        margin: 10px auto;
+    }
+
+
+
+}
+
+
+@media (min-width:781px) and (max-width:850px){
+    #reviews .review-container .rating-box{
+        flex-basis:45%;
+        margin: 10px auto;
+    }
+
+    
+
+}
+
+@media (min-width:852px) and (max-width:950px){
+    #navbar .logo{
+        display: block;
+        /* width: 100%; */
+        text-align: center;
+        margin: 5px auto;
+    }
+    
+@keyframes width-change  {
+    from{
+       margin-top: 2px;
+       width: 0%;
+       opacity: 0;
+       border: 1px solid #3a4660;
+    }
+
+    to{
+       margin-top: 2px;
+       width: 100%;
+       opacity:1;
+       border: 1px solid #845007;
+    }
+
+}
+
+    #navbar .manu{
+        display: block;
+        margin: 10px auto;
+    }
+
+    #navbar .manu .manu-links{
+        margin: 0% auto;
+    }
+    
+    #reviews .review-container .rating-box{
+        flex-basis:60%;
+        margin: 10px auto;
+    }
+
+}
+
+@media (min-width:952px) and (max-width:1050px){
+    #food-manu .food-manu-list .manu-list{
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+        
+    #food-manu .food-manu-list .manu-list .manu-image{
+        margin: 0px 20px 0px auto;
+    } 
+    
+    
+}
+
+
+
+@media (orientation:landscape) and (max-height:500px){
+    .head-set{
+        height: 58vmax;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
